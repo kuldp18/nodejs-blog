@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Noto Serif', serif;
+  max-width: 1200px;
+  background: #f2994a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f2c94c, #f2994a);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f2c94c, #f2994a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  min-height: 95vh;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+/* nav & footer styles */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav h1 {
+  font-size: 3em;
+}
+
+nav p,
+nav a {
+  color: rgb(169, 60, 21);
+  font-weight: 300;
+}
+
+footer {
+  color: rgb(169, 60, 21);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+.heroH2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+/* index styles */
+.blogs a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 5px solid rgb(131, 7, 32);
+  font-size: 1.3em;
+}
+
+.blogs a:hover h3 {
+  color: rgb(185, 43, 72);
+}
+
+/* details styles */
+.details {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgb(131, 7, 32);
+  color: white;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: rgb(110, 15, 34);
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* create styles */
+.create-blog form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.create-blog label {
+  display: block;
+  margin-top: 24px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.create-blog button {
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
